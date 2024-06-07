@@ -6,16 +6,20 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Asosiy Saxifa'),
+        backgroundColor: Colors.amber,
         actions: [],
       ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
-             const DrawerHeader(
-              child: Text('Menu Bar'),
+            const DrawerHeader(
+              child: Text(
+                'Menu Bar',
+                style: TextStyle(fontSize: 25),
+              ),
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.amber,
               ),
             ),
             ListTile(
